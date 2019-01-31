@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="src/styles/style.css">
   <link rel="shortcut icon" type="image/png" href="src/images/wedding-icon.png"/>
   <title>Document</title>
@@ -13,12 +14,12 @@
 <body>
   <header></header>
 
-  <div id="landing" class="section">
+  <div id="landing" class="section cursiva">
     <!-- <h2>Casamento</h2> -->
     <h2>Álvaro <span class="text-italic">&</span> Larissa</h2>
   </div>
 
-  <div id="explanation" class="section">
+  <div id="explanation" class="section cursiva">
     <h1>Explanation</h1>
 
     <div class="description">
@@ -34,7 +35,7 @@
       </div>
     </div>
 
-    <div class="banks">
+    <div class="banks not-cursiva">
       <div class="bank">
         <img src="./src/images/banks/Frame-4.svg" alt="icon bank of Nubank">
         <div class="bank-box">
@@ -108,10 +109,10 @@
     </div>
     <div class="banner img--cama-mesa-banho"></div>
     
-    <div class="box box--rectangle bg-color--gray-dark">
-      <p>50,00 R$</p>
+    <div class="box box--rectangle bg-color--gray-dark cursiva">
+      <p>R$ 50,00</p>
       <p>À</p>
-      <p>100,00 R$</p>
+      <p>R$ 100,00</p>
     </div>
   </div>
 
@@ -122,10 +123,10 @@
     </div>
     <div class="banner img--Eletrodomesticos"></div>
 
-    <div class="box box--rectangle bg-color--gray-dark">
-      <p>150,00 R$</p>
+    <div class="box box--rectangle bg-color--gray-dark cursiva">
+      <p>R$ 150,00</p>
       <p>À</p>
-      <p>250,00 R$</p>
+      <p>R$ 250,00</p>
     </div>
   </div>
 
@@ -137,10 +138,14 @@
     <div class="banner img--Eletrodomesticos"></div>
     
     <div class="box box--rectangle bg-color-gray--light">
-      <div class="box box--rectangle bg-color--gray-dark">
+      <div class="box box--rectangle bg-color--gray-dark cursiva">
       <p>O limite é o infinito<br>do tamanho do seu amor</p>
       </div>
     </div>
+  </div>
+
+  <div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd48fpSxSFluyHQ6vZV3kt9teiSQLtcudiDNN1fvvnSzNTjkQ/viewform?embedded=true" width="360" height="560" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
   </div>
 
   
@@ -149,23 +154,24 @@
       <h3>Localização<br>do evento</h3>
     </div>
 
-    <div id="map"></div>
+    <a id="map" href="https://www.google.com.br/maps/place/R.+Aldo+de+Melo+Freire,+1876+-+Capim+Macio,+Natal+-+RN,+59082-030/@-5.8556203,-35.204963,17z/data=!4m5!3m4!1s0x7b2ff6893e9b787:0x70505848b77594ee!8m2!3d-5.8556203!4d-35.2027743">
+      <!-- <img src="./src/images/map.png" alt="location map" srcset=""> -->
+      <div id="img-map"></div>
+      <p>Local<br>
+        R Aldo de Melo Freire, 1876<br>
+        Cond. Capim Macio Residencial
+      </p>
+      
+    </a>
   </div>
 
+  
   <footer>
     <p>Desenvolvido por: <a href="http://alvaropfn.github.io">AlvaroPFN</a></p>
   </footer>
   
-  <!-- <script src="src/scripts/main.js"></script> -->
-  <script>
-    var map;
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -5.8556203, lng: -35.204963},
-        zoom: 5
-      });
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhpnTDn_5hvD2KMe1IBRPERtc0Er-O_YE&callback=initMap" async defer></script>
+  <script src="src/scripts/main.js"></script>
+  <!-- <script src="./src/scripts/main.js">  </script> -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhpnTDn_5hvD2KMe1IBRPERtc0Er-O_YE&callback=initMap" async defer></script> -->
 </body>
 </html>
