@@ -10,6 +10,11 @@
   --purple: #393168;
 }
 
+body{
+  margin: auto;
+  max-width: 450px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -46,6 +51,8 @@ header{
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
+
+  margin:auto;
 }
 
 .box.box--medium{
@@ -56,19 +63,49 @@ header{
 }
 
 .box.box--large{
-  
   width: 290px;
   height: 120px;
 
   border-radius: 16px;
 }
 
+.box.box--rectangle{
+  width: 288px;
+  height: 84px;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.box.box--rectangle p{
+  font-size: 150%;
+}
+
 .ellipse--large{
   width: 150%;
   height: 100px;
   border-radius: 50% / 50%;
-  justify-content: flex-start;
+  
   padding-top: 10px;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ellipse--large p{
+  font-size: 32px;
+  color: var(--white);
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-bottom: 150px solid var(--gray-light);
+  border-left: 100vw solid transparent;
+  position: relative;
 }
 
 .banner{
@@ -82,23 +119,7 @@ header{
   top: -40px;
 }
 
-.paiments{
-  width: 100%;
-  height: fit-content;
-
-  display: flex;
-  flex-flow: row;
-  flex-wrap: nowrap;  
-}
-
-.paiments .paiment-row{
-  display: grid;
-  grid-template-columns: 108px auto;
-  grid-template-rows: auto auto;
-  grit-template-areas: 
-  "button barcode"
-  "number number"
-}
+/*  LANDING  */
 
 #landing{
   background-image: url("../images/landing.jpg");
@@ -107,6 +128,19 @@ header{
   background-size: cover;
 }
 
+#landing h2{
+  position: relative;
+  top: 200px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #F9F9F9;
+  font-size: 32px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+}
+
+/*  EXPLANATION  */
+
 #explanation .description{
   width: 100%;
   align-content: center;
@@ -114,12 +148,17 @@ header{
   text-align: center;
 }
 
-#explanation .description *{
+#explanation .description{
   margin-top: 15px;
+  margin: auto;
 }
 
 #explanation .description p{
   width: 355px;
+}
+
+#explanation .post-description *{
+  margin-top: 20px;
 }
 
 #explanation .banks{
@@ -147,15 +186,15 @@ header{
   align-items: center;
 }
 
-#explanation .banks .bank .bank-box .bank-box--left{
+#explanation .banks .bank .bank-box .bank-box--left,
+  .banks .bank .bank-box .bank-box--right
+{
   display: flex;
   flex-flow: column;
   align-items: flex-end;
 }
 
 #explanation .banks .bank .bank-box .bank-box--right{
-  display: flex;
-  flex-flow: column;
   align-items: flex-start;
   margin-left: 10px;
 }
@@ -165,8 +204,54 @@ header{
   margin: 10px;
 }
 
-#tiazinha  .banner.img--cama-mesa-banho{
+/*  TIAZINHA  */
+
+#tiazinha .banner.img--cama-mesa-banho{
   background-image: url(../images/cama-mesa-e-banho1.jpg);
+}
+
+/*  INTERA  */
+#intera .banner{
+  top: 0;
+}
+
+#intera .img--Eletrodomesticos{
+  background-image: url(../images/Belgrado-Corporativo-Eletrodomesticos1.jpg);
+}
+
+#intera .box--float{
+  font-size: 1.2em;
+  color: var(--gray-light);
+
+  position: absolute;
+  margin-top: 35px;
+  padding: 10px;
+}
+
+/*  RICO  */
+
+#rico .img--Eletrodomesticos{
+  background-image: url(../images/rei-do-camarote-veja-sp-alexander-almeida-20131104-02-original.jpeg);
+}
+
+#rico .box p{
+  text-align: center;
+}
+
+/*  MAP SECTION  */
+
+#map-section .title-bar{
+  color: #F9F9F9;
+  background-color: var(--gray-dark);
+
+  text-align: center;
+  height: 2.8em;
+  width: 100%;
+}
+
+#map-section #map{
+  width: 100%;
+  height: 350px;
 }
 
 footer{
