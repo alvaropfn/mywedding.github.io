@@ -133,7 +133,7 @@ header{
 /*  LANDING  */
 
 #landing{
-  background-image: url("../images/landing.jpg");
+  background-image: url("../images/animation.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,7 +141,7 @@ header{
 
 #landing h2{
   position: relative;
-  top: 200px;
+  top: 100px;
   
   color: #F9F9F9;
   font-size: 32px;
